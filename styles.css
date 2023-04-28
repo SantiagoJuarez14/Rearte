@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 40px;
+}
+.logodesktop {
+  display: none;
+}
+.imgmobile {
+  width: 10rem;
+}
+nav{
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 1;
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  padding: 40px;
+  transition: all 300ms;
+}
+.navbaractive{
+  right: 0px;
+  display: block;
+}
+
+nav ul{
+  margin-top: 6rem;
+}
+
+nav ul li{
+  margin-top: 1.5rem;
+  margin-left: 0;
+  font-size: 1.3rem;
+}
+nav ul li a{
+  color: #bebebe;
+}
+.selected{
+  background: none;
+  padding: 0px ;
+  border-radius: none;
+  color: red;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid rgba(255, 0, 0, 0.734);
+}
+.burger {
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  z-index: 10;
+  right: 2rem;
+}
+.spanburger {
+  display: block;
+  width: 100%;
+  height: 0.26em;
+  background: red;
+  border-radius: 5px;
+  margin-top: 0.36em;
+  transition: all 200ms;
+  transform-origin: 0px 100%;
+}
+.activespanburger1 {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+.activespanburger2 {
+  opacity: 0;
+}
+.activespanburger3 {
+  transform: rotate(-45deg) translate(-3px, 4px);
+}
+.activeburger{
+    width: 2.3em;
+    height: 2.3em;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    right: 2rem;
+}
+.backmenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.backmenuactive{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+ul {
+  flex-direction: column;
+}
+li {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  list-style: none;
+  border-bottom: 1.5px solid white;
+}
+li a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.popup{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.popup_border{
+  width: 450px;
+  height: 75vh;
+  background-color: white;
+  border-radius: 30px;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.cerrar_cotizacion{
+  position: absolute;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  margin-left: 20rem;
+  cursor: pointer;
+}
+.cerrar_cotizacion:hover{
+  position: absolute;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  color: red;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  margin-left: 20rem;
+  animation: all 200ms;
+}
+#precio_propiedad{
+  display: flex;
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-top: 5rem;
+  width: 400px;
+
+}
+#precio{
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+#button_descargar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-top: 5rem;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid red;
+  background-color:red ;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  
+
+}
+#button_descargar:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-top: 5rem;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid red;
+  background-color:white ;
+  color: red ;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.disclamer{
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pdisclamer{
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 550px;
+}
+.sucursal{
+  text-align: center;
+  width: 270px;
+}
+form {
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 20px;
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 0.5rem;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border-color: rgb(255, 0, 0);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: white;
+  color: rgb(255, 0, 0);
+  padding: 10px 20px;
+  border-color: rgba(255, 0, 0, 0.374);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 2px 1px #ccc;
+  width: 20.5em;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+select {
+  width: 100%;
+  padding: 0.4rem;
+  border: 3px solid #ccc;
+  margin-top: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  border-color: rgb(255, 0, 0);
+
+}
+#checkboxes {
+  display: flex;
+  align-items: center;
+}
+.pyt {
+  margin-left: 3.7rem;
+  margin-top: 0.7rem;
+}
+.pyt2 {
+  margin-left: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  
+}
+#botoncalcularprecio {
+  margin: 1rem 0 0 0;
+}
+.ciudad {
+  font-size: 1rem;
+  
+}
+#ubicacion{
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+#buscador{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 10rem 0 10rem;
+  margin-top: 2rem;
+}
+#inicio{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whatsapp{
+  position: fixed;
+  z-index: 10;
+  width: 4em;
+  margin-right: -35rem;
+}
+.select_buscador{
+  width: 10em; 
+}
+#input_buscador1{
+  width: 7rem; 
+}
+#input_buscador2{
+  width: 7rem; 
+}
+.button_buscador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-top: 5rem;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid red;
+  background-color:red ;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  
+
+}
+.button_buscador:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-top: 5rem;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid red;
+  background-color:white ;
+  color: red ;
+  font-weight: 600;
+  font-size: 1rem;
+}

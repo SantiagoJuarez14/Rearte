@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasador</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+</head>
+<body>
+<body>
+    <header>
+        <img src="./img/" class="imgmobile" alt="logomobile">
+        <img src="" alt="logodesktop" class="logodesktop">
+        <div class="burger">
+            <span class="spanburger spanburger1"></span>
+            <span class="spanburger spanburger2"></span>
+            <span class="spanburger spanburger3"></span>
+        </div>
+        <div class="backmenu"></div>
+        <nav class="navbar">
+            <ul>
+                <li class="active"><a href="#inicio" class="selected">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#quienessomos">Quienes Somos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tasador del Valor de Propiedades</h1>
+        <form>
+            <label for="construidos">M² Construidos</label>
+            <input type="number" id="construidos" name="construidos" required>
+            <label for="sinconstruir">M² Sin Construir</label>
+            <input type="number" id="sinconstruir" name="sinconstruir" required>
+            <label for="habitaciones">Número de habitaciones</label>
+            <input type="number" id="habitaciones" name="habitaciones" required>
+            <label for="baños">Número de baños</label>
+            <input type="number" id="baños" name="baños" required>
+            <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
+                <option value="" class="ciudad">Selecciona una ciudad</option>
+                <option value="escobar" class="ciudad">Escobar</option>
+                <option value="bellavista" class="ciudad">Bella Vista</option>
+                <option value="grandbourg" class="ciudad">Grand Bourg</option>
+                <option value="pablonogues" class="ciudad">Ingeriero Pablo Nogués</option>
+                <option value="josecpaz" class="ciudad">Jose C. Paz</option>
+                <option value="polvorines" class="ciudad">Los Polvorines</option>
+                <option value="malvinas" class="ciudad">Malvinas Argentinas</option>
+                <option value="muñiz" class="ciudad">Muñiz</option>
+                <option value="pilar" class="ciudad">Pilar</option>
+                <option value="sanmiguel" class="ciudad">San Miguel</option>
+            </select>
+            <div id="checkboxes">
+                <label for="pileta" class="pyt">Pileta</label>
+                <input type="checkbox" id="pileta" name="pileta" class="pyt2">
+                <label for="terraza" class="pyt">Terraza</label>
+                <input type="checkbox" id="terraza" name="terraza" class="pyt2">
+            </div>
+        
+            <button type="submit" onclick="calcularPrecio()" id="botoncalcularprecio">Calcular precio</button>
+        </form>
+        <div class="popup">
+            <div class="popup_border">
+                <div class="cerrar_cotizacion">
+                    <h6>x</h6>
+                </div>
+                <h1 id="precio_propiedad">El valor de su propiedad es:</h1>
+                <div id="precio">$1231341</div>
+                <button id="button_descargar">Descargar Cotización</button>
+                <h4 class="disclamer">*Recordamos que el valor de la propiedad es un valor estimado</h4>
+                
+            </div>
+        </div>
+        <article>
+            <p class="pdisclamer">El valor de la propiedad es un valor estimado para conocer el valor preciso comuníquese por cualquiera de nuestros medios de atención</p>
+            <p class="pdisclamer"> Tel: 4667-2956</p>
+            <p class="pdisclamer"> Cel: 11-3900-0846</p>
+            <p class="pdisclamer sucursal">o acercándose a nuestra sucursal en Muñoz 1338 San Miguel, Buenos Aires.</p>
+                
+        </article>
+    </main>
+	<script src="./js/script.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@ let burger2 = document.querySelector(".spanburger2");
 let burger3 = document.querySelector(".spanburger3");
 let navmobile = document.querySelector(".navbar");  
 let background = document.querySelector(".backmenu");
+let whatsapp = document.querySelector(".whatsapp");
 
 function animateBars(){
     burger1.classList.toggle("activespanburger1");
@@ -13,6 +14,7 @@ function animateBars(){
 
     navmobile.classList.toggle("navbaractive");
     background.classList.toggle("backmenuactive");
+    whatsapp.classList.toggle("whatsappactive");
 }
 
 const form = document.querySelector('form');

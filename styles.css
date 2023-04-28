@@ -30,6 +30,9 @@ nav{
   padding: 40px;
   transition: all 300ms;
 }
+.whatsappactive{
+  display:none;
+}
 .navbaractive{
   right: 0px;
   display: block;
@@ -127,7 +130,11 @@ h1 {
   text-align: center;
   font-weight: 400;
 }
-
+#presupuesto_boton_navbar{
+  width: 10em;
+  margin-top: 2rem;
+  border: 2px solid red;
+}
 .popup{
   display: none;
   align-items: center;
@@ -342,9 +349,10 @@ select {
   margin-top: 2rem;
 }
 #inicio{
-  display: flex;
+ display: flex;
  flex-direction: column;
- align-items: center;
+ align-items: center; 
+ margin-top: 2.3rem;
 }
 main{
   display: flex;
@@ -355,39 +363,51 @@ main{
   position: fixed;
   z-index: 10;
   width: 4em;
-  margin-right: -35rem;
+  bottom: 3em;
+  right: 1.5em;
 }
 .select_buscador{
-  width: 10em; 
+  width: 12em;
+  margin-right: 2rem;
+
+}
+.select_buscador2{
+  width: 12em;
+}
+h3{
+  margin-left: 1rem;
+  font-size: 1.2em;
+  font-weight: 400;
+
 }
 #input_buscador1{
-  width: 7rem; 
+  margin-top: 1rem;
+  margin-right: 2rem;
+  width: 8rem; 
 }
 #input_buscador2{
-  width: 7rem; 
+  margin-right: 2rem;
+  width: 8rem; 
 }
 .button_buscador{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  margin-top: 5rem;
+  width: 28em;
   height: 40px;
+  margin-top: 0.5rem;
   border-radius: 5px;
   border: 2px solid red;
   background-color:red ;
   color: white;
   font-weight: 600;
   font-size: 1rem;
-  
-
 }
 .button_buscador:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  margin-top: 5rem;
+  width: 21.5em;
   height: 40px;
   border-radius: 5px;
   border: 2px solid red;
@@ -395,4 +415,29 @@ main{
   color: red ;
   font-weight: 600;
   font-size: 1rem;
+}
+#nuestros_servicios{
+  margin-top: 5rem;
+}
+#borde_preferencia{
+  border: 2px solid red;
+  width: 35em;
+  height: 40em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+footer{
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  left: 0;
+  bottom: 0;
+}
+#servicios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
 }

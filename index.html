@@ -28,48 +28,49 @@
                 <li><a href="#quienessomos">Quienes Somos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <Button id="presupuesto_boton_navbar">Presupesto</Button>
         </nav>
     </header>
     <Main>
-        <div id="inicio">
-            <H1>Seleccione su preferencia</H1>
-            <div id="buscador">
-                <div>
-                <h3>Operación</h3>
-                <select name="operacion" id="" class="select_buscador"></select>
+        <div id="borde_preferencia">
+            <div id="inicio">
+                <H1>Seleccione su preferencia</H1>
+                <div id="buscador">
+                    <div>
+                    <h3>Operación</h3>
+                    <select name="operacion" id="" class="select_buscador"></select>
+                    </div>
+                    <div>
+                    <h3>Dormitorios</h3>
+                    <select name="dormitorios" id="" class="select_buscador2"></select>
+                    </div>
+                    <div>
+                    <h3>Zona</h3>
+                    <select name="zona" id="" class="select_buscador"></select>
                 </div>
                 <div>
-                <h3>Dormitorios</h3>
-                <select name="dormitorios" id="" class="select_buscador"></select>
+                    <h3>Barrio</h3>
+                    <select name="barrio" id="" class="select_buscador2"></select>
                 </div>
                 <div>
-                <h3>Zona</h3>
-                <select name="zona" id="" class="select_buscador"></select>
+                    <h3>Tipo de Propiedad</h3>
+                    <select name="tipodepropiedad" id="" class="select_buscador"></select>
+                </div>
+                <div>
+                    <h3>Divisa</h3>
+                    <select name="divisa" id="" class="select_buscador2"></select>
+                </div>
             </div>
             <div>
-                <h3>Barrio</h3>
-                <select name="barrio" id="" class="select_buscador"></select>
+                <h3>Rango</h3>
+                <input type="number" name="rangobase" id="input_buscador1"></input>
+                <input type="number" name="rangomaximo" id="input_buscador2"></input>
             </div>
-            <div>
-                <h3>Tipo de Propiedad</h3>
-                <select name="tipodepropiedad" id="" class="select_buscador"></select>
-            </div>
-            <div>
-                <h3>Divisa</h3>
-                <select name="divisa" id="" class="select_buscador"></select>
-            </div>
+                <button type="submit" class="button_buscador">Buscar</button>   
         </div>
-        <div>
-            <h3>Rango</h3>
-            <input type="number" name="rangobase" id="input_buscador1"></input>
-            <input type="number" name="rangomaximo" id="input_buscador2"></input>
-        </div>
-            <button type="submit" class="button_buscador">Buscar</button>   
-        
-        <img src="./img/whatsapp-alt.svg" alt="whatsapp" class="whatsapp">
+        <img src="./img/wpp.png" alt="whatsapp" class="whatsapp">
         <div id="servicios">
-            <h1>Nuestros Servicios</h1>
-            <Button>Solicite su tasación en el día</Button>
+            <h1 id="nuestros_servicios">Nuestros Servicios</h1>
             <img src="" alt="alquileres">
             <h2>Alquileres</h2>
             <h3>Alquilamos tu propiedad rápido y seguro</h3>
@@ -121,14 +122,14 @@
             </form>
         </div>
     </Main>
-    <footer>
+<!--     <footer>
         <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados</h6>
         <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
         <h6>Teléfono: 4667-2956</h6>
         <h6>Celular: 11-3900-0846</h6>
         <img src="" alt="facebook">
         <img src="" alt="instagram">
-    </footer>
+    </footer> -->
     <script src="./js/script.js"></script>
 </body>
 </html>

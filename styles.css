@@ -255,15 +255,14 @@ article{
   width: 270px;
 }
 form {
-  max-width: 400px;
+  width: 30em;
   margin: 2em auto;
-  padding: 20px;
+  padding:  1rem 2rem 2rem 2rem;
   border: 1px solid #ff0000;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
-
 label {
   margin-top: 0.5rem;
   display: block;
@@ -431,6 +430,9 @@ h3{
 }
 #quienes_somos{
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .h3_servicios{
   text-align: center;
@@ -469,8 +471,28 @@ p{
   margin-top: 1rem;
 }
 h5{
-  
+  font-size: 1em;
+  margin: 1rem 0 0.5rem 1rem;
+  font-weight: 500;
 }
+.input_contacto{
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 0.2rem;
+}
+.select_contacto{
+  margin: 0;
+  border: 1px solid red;
+}
+textarea{
+  resize: vertical;
+  min-height: 10rem;
+}
+#button_contacto{
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
 #borde_preferencia{
   border: 2px solid red;
   width: 35em;

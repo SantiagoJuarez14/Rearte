@@ -1,3 +1,15 @@
+let url = "https://cors-anywhere.herokuapp.com/www.mapapropapp.com/api/action/portal-v2/properties";
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+
+
+/* GET /api/action/network-vq/get-customers HTTP/1.1
+host */
+
 document.querySelector(".burger").addEventListener("click", animateBars);
 
 let burger1 = document.querySelector(".spanburger1");

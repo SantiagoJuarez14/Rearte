@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <img src="./img/logo-rearte.png" class="imgmobile" alt="logomobile">
+    <header id="header">
+        <a href="./index.html"><img src="./img/logo-rearte.png" class="imgmobile" alt="logomobile"></a>
         <img src="" alt="logodesktop" class="logodesktop">
         <div class="burger">
             <span class="spanburger spanburger1"></span>
@@ -23,10 +23,10 @@
         <div class="backmenu"></div>
         <nav class="navbar">
             <ul>
-                <li class="active"><a href="#inicio" class="selected">Inicio</a></li>
+                <li><a href="#header">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#quienessomos">Quienes Somos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#quienes_somos">Quienes Somos</a></li>
+                <li><a href="#contacto"  class="active">Contacto</a></li>
             </ul>
             <Button id="presupuesto_boton_navbar">Presupesto</Button>
         </nav>
@@ -72,23 +72,23 @@
         <img src="./img/wpp.png" alt="whatsapp" class="whatsapp">
         <div id="servicios">
             <h1 class="titulos">Nuestros Servicios</h1>
-            <img src="" alt="alquileres" class="nuestros_servicios">
+            <a href="./alquileres.html"><img src="https://s3.amazonaws.com/mapaprop-image/website-images/3028/588/3855.jpg" alt="alquileres" class="nuestros_servicios"></a>
             <h2>Alquileres</h2>
             <h3 class="h3_servicios">Alquilamos tu propiedad rápido y seguro</h3>
             <span class="span_servicios"></span>
-            <img src="" alt="ventas" class="nuestros_servicios">
+            <a href="./ventas.html"><img src="https://s3.amazonaws.com/mapaprop-image/website-images/3028/588/3856.jpg" alt="ventas" class="nuestros_servicios"></a>
             <h2>Ventas</h2>
             <h3 class="h3_servicios">Compra y venta de tu propiedad</h3>
             <span class="span_servicios"></span>
-            <img src="" alt="administracionalquileres" class="nuestros_servicios">
+            <img src="https://s3.amazonaws.com/mapaprop-image/website-images/3028/588/3857.jpg" alt="administracionalquileres" class="nuestros_servicios">
             <h2>Administración de Alquileres</h2>
             <h3 class="h3_servicios">Cobranza, Liquidación, Control de Impuestos y Estado de Inmuesbles</h3>
             <span class="span_servicios"></span>
-            <img src="" alt="Renovacionpropiedad" class="nuestros_servicios">
+            <a href="./renovacion.html"><img src="https://s3.amazonaws.com/mapaprop-image/website-images/3028/588/3861.jpg" alt="Renovacionpropiedad" class="nuestros_servicios"></a>
             <h2>Renovación de Propiedad</h2>
             <h3 class="h3_servicios">Un equipo de especialistas dejan tu casa como nueva</h3>
             <span class="span_servicios"></span>
-            <img src="" alt="AdministraciónConsorcios">
+            <img src="https://s3.amazonaws.com/mapaprop-image/website-images/3028/588/3860.jpg" alt="AdministraciónConsorcios" class="nuestros_servicios">
             <h2>Administración de Consorcios</h2>
             <h3 class="h3_servicios">Edificios, Barrios Cerrados, Clubes de Campo, Galerias Comerciales</h3>
         </div>
@@ -117,26 +117,30 @@
             <h3 id="h3_contacto">Ésta es la forma más rápida en que nuestro equipo puede atender sus consultas.</h3>
             <form action="" method="post">
                 <h5>Nombre y Apellido</h5>
-                <input type="text" placeholder="*Nombre y Apellido" class="input_contacto">
+                <input type="text" class="input_contacto">
                 <h5>Email</h5>
-                <input type="text" placeholder="*Ingrese su Email" class="input_contacto">
+                <input type="text" class="input_contacto">
                 <h5>Teléfono</h5>
-                <input type="text" placeholder="*Ingrese un teléfono" class="input_contacto">
+                <input type="text" class="input_contacto">
                 <h5>Asunto</h5>
-                <select name="" id="" placeholder="*Seleccione un asunto" class="select_contacto">Seleccione un asunto</select>
+                <select name="" id=""  class="select_contacto">Seleccione un asunto</select>
                 <h5>Mensaje</h5>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="*Escriba su mensaje" class="input_contacto"></textarea>
+                <textarea name="mensaje" id="" cols="30" rows="10" class="input_contacto"></textarea>
                 <button type="submit" id="button_contacto">Enviar Consulta</button>
             </form>
         </div>
     </Main>
     <footer>
-        <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados</h6>
-        <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
-        <h6>Teléfono: 4667-2956</h6>
-        <h6>Celular: 11-3900-0846</h6>
-        <img src="" alt="facebook">
-        <img src="" alt="instagram">
+        <div>
+            <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados</h6>
+            <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
+            <h6>Teléfono: 4667-2956</h6>
+            <h6>Celular: 11-3900-0846</h6>
+        </div>
+        <div>
+            <img src="./img/facebook.svg" alt="facebook" class="img_footer facebook">
+            <img src="./img/instagram-alt.svg" alt="instagram" class="img_footer">
+        </div>
     </footer>
     <script src="./js/script.js"></script>
 </body>

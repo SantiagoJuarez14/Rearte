@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rearte Propiedades</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header id="header">
@@ -26,25 +27,23 @@
             <Button id="presupuesto_boton_navbar">Presupesto</Button>
         </nav>
     </header>
-    </main>
-    <Div id="Consulta">
-        <div>
-            <h2>Consulta por una propiedad</h2>
-            <h2>Codigo: </h2>
+    <div id="contacto" class="contacto_renovacion">
+        <h1 class="titulos">Renovación de Propiedades</h1>
+        <h3 id="h3_renovacion">Rellena el formulario y nos contactaremos con usted para brindarle un presupuesto de la renovación de su propiedad</h3>
+        <form action="" method="post">
             <h5>Nombre y Apellido</h5>
-            <input type="text" placeholder="*Nombre y Apellido">
+            <input type="text" class="input_contacto">
             <h5>Email</h5>
-            <input type="text" placeholder="*Ingrese su Email">
+            <input type="text" class="input_contacto">
             <h5>Teléfono</h5>
-            <input type="text" placeholder="*Ingrese un teléfono">
+            <input type="text" class="input_contacto">
             <h5>Asunto</h5>
-            <select name="" id="" aria-placeholder="*Seleccione un asunto"></select>
+            <select name="" id=""  class="select_contacto">Seleccione un asunto</select>
             <h5>Mensaje</h5>
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="*Escriba su mensaje"></textarea>
-            <button type="submit"></button>
-            <button id="cerrarconsulta"></button>
-        </div>
-    </Div>
-
+            <textarea name="mensaje" id="" cols="30" rows="10" class="input_contacto"></textarea>
+            <button type="submit" id="button_contacto">Enviar Consulta</button>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

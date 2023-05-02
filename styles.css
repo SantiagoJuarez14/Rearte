@@ -307,7 +307,7 @@ select {
   width: 100%;
   padding: 0.4rem;
   border: 3px solid #ccc;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 5px;
   margin-bottom: 1em;
   font-size: 1.1rem;
@@ -320,7 +320,7 @@ select {
   align-items: center;
 }
 .pyt {
-  margin-left: 3.7rem;
+  margin-left: 4.7rem;
   margin-top: 0.7rem;
 }
 .pyt2 {
@@ -330,6 +330,7 @@ select {
 }
 #botoncalcularprecio {
   margin: 1rem 0 0 0;
+  width: 25.5rem;
 }
 .ciudad {
   font-size: 1rem;
@@ -441,7 +442,7 @@ h3 {
 .titulos {
   font-size: 2em;
 }
-p {
+#quienes_somos_p {
   margin-top: 2rem;
   width: 40em;
   text-align: justify;
@@ -496,7 +497,7 @@ textarea {
 #borde_preferencia {
   border: 2px solid red;
   width: 35em;
-  height: 40em;
+  height: 43em;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
 }
@@ -532,6 +533,15 @@ footer {
   font-weight: 400;
   width: 15;
   margin-top: 0.5rem;
+}
+#form_tasador{
+  width: 30em;
+  margin: 2em auto;
+  padding: 1rem 2rem 2rem 2rem;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1280px) {
   .burger {

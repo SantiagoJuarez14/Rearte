@@ -40,34 +40,70 @@
                 <div id="buscador">
                     <div>
                         <h3>Operación</h3>
-                        <select name="operacion" id="" class="select_buscador"></select>
+                        <select name="operacion" id="" class="select_buscador">
+                            <option value="" selected="selected">Indistinto</option>
+                            <option value="1">Venta</option>
+                            <option value="2">Alquiler</option>
+                            <option value="3">Alquiler temporario</option>
+                        </select>
                     </div>
                     <div>
                         <h3>Dormitorios</h3>
-                        <select name="dormitorios" id="" class="select_buscador2"></select>
+                        <select name="dormitorios" id="" class="select_buscador2">
+                            <option value="">Indistinto</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4+</option>
+                        </select>
                     </div>
                     <div>
                         <h3>Zona</h3>
-                        <select name="zona" id="" class="select_buscador"></select>
+                        <select name="zona" id="zone1" class="select_buscador">
+                            <option value="" selected="selected">Indistinto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Ciudad</h3>
+                        <select name="zona" id="zone2" class="select_buscador"></select>
                     </div>
                     <div>
                         <h3>Barrio</h3>
-                        <select name="barrio" id="" class="select_buscador2"></select>
+                        <select name="zona" id="zone3" class="select_buscador"></select>
                     </div>
                     <div>
                         <h3>Tipo de Propiedad</h3>
-                        <select name="tipodepropiedad" id="" class="select_buscador"></select>
+                        <select name="tipodepropiedad" id="" class="select_buscador">
+                            <option value="" selected="selected">Indistinto</option>
+							<option value="1">Departamento</option>
+                            <option value="2">Casa</option>
+                            <option value="4">Terreno</option>
+                            <option value="8">Galpón</option>
+                            <option value="9">Local comercial</option>
+                            <option value="10">PH</option>
+                            <option value="11">Duplex</option>
+                            <option value="7">Oficina</option>
+                            <option value="6">Cochera</option>
+                            <option value="18">Triplex</option>
+                            <option value="12">Fondo de Comercio</option>
+                            <option value="3">Quinta</option>										</select>
+									
+                        </select>
                     </div>
                     <div>
                         <h3>Divisa</h3>
-                        <select name="divisa" id="" class="select_buscador2"></select>
+                        <select name="divisa" id="" class="select_buscador">
+                            <option value="">Indistinto</option>
+							<option value="ARS">ARS Pesos</option>
+                            <option value="USD">USD Dólares</option>	
+                        </select>
+                    </div>
+                    <div id="rango_precio">
+                        <input type="number" name="rangobase" placeholder="0000"></input>
+                        <input type="number" name="rangomaximo" id="input_rango" placeholder="0000"></input>
                     </div>
                 </div>
-                <div>
-                    <h3>Rango</h3>
-                    <input type="number" name="rangobase" id="input_buscador1"></input>
-                    <input type="number" name="rangomaximo" id="input_buscador2"></input>
-                </div>
+
                 <button type="submit" class="button_buscador">Buscar</button>   
             </div>
         </div>

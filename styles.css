@@ -307,7 +307,7 @@ select {
   width: 100%;
   padding: 0.4rem;
   border: 3px solid #ccc;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   border-radius: 5px;
   margin-bottom: 1em;
   font-size: 1.1rem;
@@ -352,6 +352,15 @@ select {
   align-items: center;
   margin-top: 2.3rem;
 }
+#rango_precio{
+  display: flex;
+  width: 14rem;
+  height: 4rem;
+  margin-top: 2.3rem;
+}
+#input_rango{
+  margin-left: 1rem;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -376,14 +385,6 @@ h3 {
   margin-left: 1rem;
   font-size: 1.2em;
   font-weight: 400;
-}
-#input_buscador1 {
-  margin-top: 1rem;
-  margin-right: 2rem;
-  width: 8rem;
-}
-#input_buscador2 {
-  width: 8rem;
 }
 .button_buscador {
   display: flex;
@@ -618,9 +619,6 @@ footer {
     display: flex;
     flex-direction: row;
     margin-top: 2.3rem;
-  }
-  .preferencia{
-    
   }
   #borde_preferencia {
     border: 2px solid red;

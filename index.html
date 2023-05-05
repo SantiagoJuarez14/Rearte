@@ -37,10 +37,10 @@
     <Main>
         <div id="borde_preferencia">
             <div id="inicio">
-                <h1 class="titulos preferencia">Seleccione su preferencia</h1>
+                <h1 class="titulos preferencia" id="preferencia">Seleccione su preferencia</h1>
                 <div id="buscador">
                     <div>
-                        <h3>Operación</h3>
+                        <h3 >Operación</h3>
                         <select name="operacion" id="" class="select_buscador">
                             <option value="" selected="selected">Indistinto</option>
                             <option value="1">Venta</option>
@@ -60,20 +60,20 @@
                     </div>
                     <div>
                         <h3>Zona</h3>
-                        <select name="zona" id="zone1" class="select_buscador">
+                        <select name="zona" id="zone1" class="select_buscador zona_select">
                             <option value="" selected="selected">Indistinto</option>
                         </select>
                     </div>
                     <div>
                         <h3>Ciudad</h3>
-                        <select name="zona" id="zone2" class="select_buscador"></select>
+                        <select name="zona" id="zone2" class="select_buscador ciudad_select"></select>
                     </div>
                     <div>
-                        <h3>Barrio</h3>
+                        <h3 class="select_preferencia">Barrio</h3>
                         <select name="zona" id="zone3" class="select_buscador"></select>
                     </div>
                     <div>
-                        <h3>Tipo de Propiedad</h3>
+                        <h3 class="select_preferencia">Tipo de Propiedad</h3>
                         <select name="tipodepropiedad" id="" class="select_buscador">
                             <option value="" selected="selected">Indistinto</option>
 							<option value="1">Departamento</option>
@@ -92,7 +92,7 @@
                         </select>
                     </div>
                     <div>
-                        <h3>Divisa</h3>
+                        <h3  class="select_preferencia">Divisa</h3>
                         <select name="divisa" id="" class="select_buscador">
                             <option value="">Indistinto</option>
 							<option value="ARS">ARS Pesos</option>
@@ -100,8 +100,8 @@
                         </select>
                     </div>
                     <div id="rango_precio">
-                        <input type="number" name="rangobase" placeholder="0000"></input>
-                        <input type="number" name="rangomaximo" id="input_rango" placeholder="0000"></input>
+                        <input type="number" name="rangobase" placeholder="0000" class="select_preferencia2"></input>
+                        <input type="number" name="rangomaximo" id="input_rango" placeholder="0000" class="select_preferencia2"></input>
                     </div>
                 </div>
 

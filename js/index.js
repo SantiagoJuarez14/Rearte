@@ -1,3 +1,22 @@
+document.querySelector(".burger").addEventListener("click", animateBars);
+
+let burger1 = document.querySelector(".spanburger1");
+let burger2 = document.querySelector(".spanburger2");
+let burger3 = document.querySelector(".spanburger3");
+let navmobile = document.querySelector(".navbar");  
+let background = document.querySelector(".backmenu");
+let whatsapp = document.querySelector(".whatsapp");
+
+function animateBars(){
+    burger1.classList.toggle("activespanburger1");
+    burger2.classList.toggle("activespanburger2");
+    burger3.classList.toggle("activespanburger3");
+
+    navmobile.classList.toggle("navbaractive");
+    background.classList.toggle("backmenuactive");
+    whatsapp.classList.toggle("whatsappactive");
+}
+
 let zonas = [{"desc":"Buenos Aires","id":2,"childs":
             [{"desc":"Escobar","id":172,"zones":
                 [{"desc":"Barrio Privado Los Tacos","id":5610,"zones":[]}]},
@@ -15,18 +34,18 @@ let zonas = [{"desc":"Buenos Aires","id":2,"childs":
                 {"desc":"Muñiz","id":13,"zones":[]},
                 {"desc":"San Miguel","id":15,"zones":[]},
                 {"desc":"Barrio Privado Pato Verde","id":5756,"zones":[]}]}]}];
-let zona1 = $("#zona1");
+let zona = $("#zona");
 $.each(zonas, function() {
   let option = $("<option value='"+this.id+"'>"+this.desc+"</option>");
   option.data("zone", this);
-  zona1.append(option);
+  zona.append(option);
 });
-$("#zona1").change(showciudad);
+$("#zona").change(showciudad);
 $("#ciudad").change(showbarrio);
 
 function showciudad() {
 $("#barrio").html("");
-$("#ciudad").html("");let zone = $("#zona1").val();
+$("#ciudad").html("");let zone = $("#zona").val();
 if (zone != "") {
 let any = $("<option value=''>Indistinto</option>");
   $("#ciudad").append(any);

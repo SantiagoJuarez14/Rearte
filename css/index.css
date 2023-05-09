@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.logo_desktop {
+  display: none;
+}
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  height: 4em;
+  padding: 0.7rem;
+  background-color: white;
+  box-shadow: 3px 3px 10px 1px #cccccc48;
+}
+.imgmobile {
+  width: 6rem;
+}
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  padding: 40px;
+  transition: all 300ms;
+}
+.navbaractive {
+  display: block;
+}
+nav ul {
+  margin-top: 6rem;
+}
+nav ul li {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  list-style: none;
+  border-bottom: 1.5px solid white;
+}
+nav ul li a {
+  color: #686868;
+  text-decoration: none;
+}
+.active {
+  background: none;
+  padding: 0px;
+  border-radius: none;
+  color: red;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid rgba(255, 0, 0, 0.734);
+}
+.burger {
+  position: sticky;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  z-index: 10;
+  margin-top: 0.3rem;
+}
+.spanburger {
+  display: block;
+  width: 100%;
+  height: 0.26em;
+  background: red;
+  border-radius: 5px;
+  margin-top: 0.36em;
+  transition: all 200ms;
+  transform-origin: 0px 100%;
+}
+.activespanburger1 {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+.activespanburger2 {
+  opacity: 0;
+}
+.activespanburger3 {
+  transform: rotate(-45deg) translate(-3px, 4px);
+}
+.activeburger {
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  right: 2rem;
+}
+#presupuesto_boton_navbar {
+  width: 10em;
+  margin-top: 2rem;
+  border: 2px solid red;
+}
+.whatsapp {
+    position: fixed;
+    z-index: 10;
+    width: 4em;
+    bottom: 2em;
+    right: 1.5em;
+  }
+.whatsappactive {
+  display: none;
+}
+main{
+    margin-top: 1rem;
+}
+h1 {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 500;
+  }
+main section div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3rem;
+    align-items: center;
+}
+h3{
+    font-size: 0.9em;
+    font-weight: 400;
+    
+}
+.select_buscador{
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+    width: 15em;
+    height: 2em;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 0, 0, 0.41);
+}
+.rango_precio{
+    flex-direction: row;
+}
+.select_precio{
+    margin: 0.37rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 0.1rem;
+    border: 1px solid rgba(255, 0, 0, 0.41);
+    width: 7em;
+}
+.button_buscador{
+    width: 12.4em;
+    color: white;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.button_buscador:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.4em;
+    border-radius: 6px;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#servicios{
+    text-align: center;
+}
+.nuestros_servicios{
+    width: 250px;
+    margin-top: 2rem;
+}
+h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h4{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.titulos{
+    margin-top: 2rem;
+}
+section p{
+    width: 80%;
+    text-align: justify;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+#quienes_somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section ul li{
+    list-style: none;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+section ul{
+    margin-top: 0.5rem;
+}
+.dueños{
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    width: 150px;
+    border: 2px solid red;
+    border-radius: 100px;
+}

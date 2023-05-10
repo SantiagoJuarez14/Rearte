@@ -150,10 +150,10 @@
             <h3>Pedro Rearte</h3>
             <h3>Dueño</h3>
         </section>
-        <section>
+        <section id="contacto">
             <h1>Contacto</h1>
-            <h3 id="h3_contacto">Ésta es la forma más rápida en que nuestro equipo puede atender sus consultas.</h3>
-            <form action="" method="post">
+            <h3>Ésta es la forma más rápida en que nuestro equipo puede atender sus consultas.</h3>
+            <form action="" method="post" id="form_contacto">
                 <h5>Nombre y Apellido</h5>
                 <input type="text" class="input_contacto">
                 <h5>Email</h5>
@@ -161,23 +161,27 @@
                 <h5>Teléfono</h5>
                 <input type="text" class="input_contacto">
                 <h5>Asunto</h5>
-                <select name="" id=""  class="select_contacto">Seleccione un asunto</select>
+                <select name="" id=""  class="input_contacto">
+                    <option value="">Seleccione un Asunto</option>
+                    <option value="1">Alquiler</option>
+                    <option value="2">Venta</option>
+                    <option value="3">Consorcio</option>
+                    <option value="4">Renovación de Propiedad</option>
+                </select>
                 <h5>Mensaje</h5>
                 <textarea name="mensaje" id="" cols="30" rows="10" class="input_contacto"></textarea>
-                <button type="submit" id="button_contacto">Enviar Consulta</button>
+                <button type="submit" class="button_buscador">Enviar Consulta</button>
             </form>
         </section>
     </main>
     <footer>
+        <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados.</h6>
+        <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
+        <h6>Teléfono: 4667-2956</h6>
+        <h6>Celular: 11-3900-0846</h6>
         <div>
-            <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados</h6>
-            <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
-            <h6>Teléfono: 4667-2956</h6>
-            <h6>Celular: 11-3900-0846</h6>
-        </div>
-        <div>
-            <img src="./img/facebook.svg" alt="facebook" class="img_footer facebook">
-            <img src="./img/instagram-alt.svg" alt="instagram" class="img_footer">
+            <a href=""><img src="./img/facebook-f.svg" alt="facebook" class="img_footer"></a>
+            <a href=""><img src="./img/instagram.svg" alt="instagram" class="img_footer"></a>
         </div>
     </footer>
     <script src="./js/index.js"></script>

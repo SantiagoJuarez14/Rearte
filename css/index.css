@@ -9,9 +9,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-.logo_desktop {
-  display: none;
-}
 header {
   display: grid;
   grid-template-columns: auto auto;
@@ -403,5 +400,112 @@ footer div{
 } 
 }
 @media(min-width:1280px){
+  body{
+    display: flex;
+    flex-direction: row;
+}
+  .imgmobile{
+    position:fixed;
+    z-index: 999;
+    margin-left: 3rem;
+    margin-top: 0.4rem;
+  }
+  .burger{
+    display: none;
+  }
+  header{
+    padding-top: 1rem;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 3px 3px 10px 1px #cccccc48;
+    z-index: 888;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    align-items: left;
+    width: 100%;
+    height: 5em;
+    right: 0;
+  }
+  nav ul {
+    margin-top: 0;
+    margin-left: 10rem;
+    display: flex;
+  }
+  nav ul li {
+    margin-top: 0;
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    list-style: none;
+    border-bottom: 1.5px solid white;
+  }
+  nav ul li a {
+    color: #686868;
+    text-decoration: none;
+  }
+  #presupuesto_boton_navbar {
+    width: 10em;
+    height: 2.2em;
+    margin-top: 0rem;
+    margin-left: 4rem;
+    border: 2px solid red;
+    background-color: red;
+    color:white;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #presupuesto_boton_navbar:hover{
+    background-color: white;
+    color: red;
+  }
+  main{
+    margin-top: 7rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 20;
+  }
+  #preferencia div{
+    margin-top: 2rem;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly
+  }
+  #preferencia div div{
+    display: flex;
+    flex-direction: column;
+  }
+  .rango_precio{
+    display: flex;
+    flex-direction: column;
 
+  }
+  .select_precio{
+    width: 14.5em;
+    height: 2.3em;
+  }
+  #servicios{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    margin-top: 0;
+    bottom: 0;
+    left: 0;
+    align-items:normal;
+    padding: 2rem;
+    height: 8rem;
+    width: 90%;
+  }
+  
 }

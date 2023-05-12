@@ -483,8 +483,8 @@ footer div{
     flex-direction: column;
   }
   .rango_precio{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
 
   }
   .select_precio{
@@ -494,6 +494,38 @@ footer div{
   #servicios{
     display: grid;
     grid-template-columns: auto auto;
+  }
+  .desktop_img{
+    margin-top: 0;
+  }
+  #quienes_somos{
+    margin-top: 3rem;
+  }
+  #quienes_somos ul{
+    display: flex;
+    flex-direction: row;
+  }
+  #quienes_somos ul li{
+    margin: 1.5rem;
+  }
+  .dueños{
+    border-radius: 150px;
+  }
+  #quienes_somos div{
+    display: flex;
+    flex-direction: row;
+  }  
+  #quienes_somos div div{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+  }
+  .form_contacto{
+    margin-bottom: 2rem;
+    border: 2px solid red;
+  }
+  #contacto h3{
+    text-align: center;
   }
   footer{
     display: flex;

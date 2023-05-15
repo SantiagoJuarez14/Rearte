@@ -185,6 +185,7 @@ select {
 }
 .popup {
   display: none;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -196,8 +197,8 @@ select {
   z-index: 20;
 }
 .popup_border {
-  width: 450px;
-  height: 75vh;
+  width: 300px;
+  height: 50%;
   background-color: white;
   border-radius: 30px;
   border: 3px solid red;
@@ -207,7 +208,7 @@ select {
 }
 .cerrar_cotizacion {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,12 +218,12 @@ select {
   color: white;
   font-size: 2.5rem;
   border-radius: 5px;
-  margin-left: 20rem;
+  margin-left: 13rem;
   cursor: pointer;
 }
 .cerrar_cotizacion:hover {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,27 +233,27 @@ select {
   color: red;
   font-size: 2.5rem;
   border-radius: 5px;
-  margin-left: 20rem;
+  margin-left: 13rem;
   animation: all 200ms;
 }
 #precio_propiedad {
   display: flex;
-  font-weight: 600;
-  font-size: 2.1rem;
-  margin-top: 5rem;
-  width: 400px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-left: 4.5rem;
 }
 #precio {
-  font-weight: 600;
-  font-size: 3rem;
-  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 #button_descargar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  margin-top: 5rem;
+  width: 230px;
+  margin-top: 2rem;
   height: 40px;
   border-radius: 5px;
   border: 2px solid red;
@@ -266,7 +267,7 @@ select {
   justify-content: center;
   align-items: center;
   width: 250px;
-  margin-top: 5rem;
+  margin-top: 1rem;
   height: 40px;
   border-radius: 5px;
   border: 2px solid red;
@@ -277,9 +278,13 @@ select {
 }
 .disclamer {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   margin-top: 2rem;
-  font-weight: 400;
+  font-weight: 500;
+}       
+
+.popup .popup_border .cerrar_cotizacion h6{
+    margin-top: 0;
 }
 article {
   display: flex;
@@ -322,6 +327,10 @@ h6{
     #presupuesto_boton_navbar{
         margin-left: 18.5rem;
     }
+    .disclamer{
+        font-size: 0.7rem;
+        margin-top: 0.9rem;
+    }
 }
 @media(min-width:1024px){
     .burger{
@@ -359,8 +368,7 @@ h6{
     }
     #presupuesto_boton_navbar {
         width: 10em;
-        height: 2.2em;
-        margin-top: 0rem;
+        margin-top: -0.5rem;
         margin-left: 3rem;
         border: 2px solid red;
         background-color: red;
@@ -372,5 +380,42 @@ h6{
     #presupuesto_boton_navbar:hover{
         background-color: white;
         color: red;
-      }
+    }
+    main{
+        margin-top: 4rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #form_tasador{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 3rem;
+    }
+    input[type="number"] {
+        width: 70%;
+        padding: 5px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-bottom: 1em;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    #botoncalcularprecio{
+        width: 70%;
+        
+    }
+    #ubicacion{
+        width: 70%;
+    }
+    #checkboxes{
+        margin-left: 0;
+    }
+    .pyt{
+        margin-left: 4.3rem;
+    }
+}
+@media (min-width: 1600px){
+    
 }

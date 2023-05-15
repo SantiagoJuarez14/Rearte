@@ -40,25 +40,29 @@
             <input type="number" id="habitaciones" name="habitaciones" required>
             <label for="baños">Número de baños</label>
             <input type="number" id="baños" name="baños" required>
-            <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
-                <option value="" class="ciudad">Selecciona una ciudad</option>
-                <option value="escobar" class="ciudad">Escobar</option>
-                <option value="bellavista" class="ciudad">Bella Vista</option>
-                <option value="grandbourg" class="ciudad">Grand Bourg</option>
-                <option value="pablonogues" class="ciudad">Ingeriero Pablo Nogués</option>
-                <option value="josecpaz" class="ciudad">Jose C. Paz</option>
-                <option value="polvorines" class="ciudad">Los Polvorines</option>
-                <option value="malvinas" class="ciudad">Malvinas Argentinas</option>
-                <option value="muñiz" class="ciudad">Muñiz</option>
-                <option value="pilar" class="ciudad">Pilar</option>
-                <option value="sanmiguel" class="ciudad">San Miguel</option>
-            </select>
-            <div id="checkboxes">
-                <label for="pileta" class="pyt">Pileta</label>
-                <input type="checkbox" id="pileta" name="pileta" class="pyt2">
-                <label for="terraza" class="pyt">Terraza</label>
-                <input type="checkbox" id="terraza" name="terraza" class="pyt2">
+            <div></div>
+            <div>
+                <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
+                    <option value="" class="ciudad">Selecciona una ciudad</option>
+                    <option value="escobar" class="ciudad">Escobar</option>
+                    <option value="bellavista" class="ciudad">Bella Vista</option>
+                    <option value="grandbourg" class="ciudad">Grand Bourg</option>
+                    <option value="pablonogues" class="ciudad">Ingeriero Pablo Nogués</option>
+                    <option value="josecpaz" class="ciudad">Jose C. Paz</option>
+                    <option value="polvorines" class="ciudad">Los Polvorines</option>
+                    <option value="malvinas" class="ciudad">Malvinas Argentinas</option>
+                    <option value="muñiz" class="ciudad">Muñiz</option>
+                    <option value="pilar" class="ciudad">Pilar</option>
+                    <option value="sanmiguel" class="ciudad">San Miguel</option>
+                </select>
+                <div id="checkboxes">
+                    <label for="pileta" class="pyt">Pileta</label>
+                    <input type="checkbox" id="pileta" name="pileta" class="pyt2">
+                    <label for="terraza" class="pyt">Terraza</label>
+                    <input type="checkbox" id="terraza" name="terraza" class="pyt2">
+                </div>
             </div>
+            <div></div>
             <button type="submit" onclick="calcularPrecio()" id="botoncalcularprecio">Calcular precio</button>
         </form>
         <div class="popup">
@@ -66,7 +70,7 @@
                 <div class="cerrar_cotizacion">
                     <h6>x</h6>
                 </div>
-                <h1 id="precio_propiedad">El valor de su propiedad es:</h1>
+                <h1 id="precio_propiedad">El valor propiedad</h1>
                 <div id="precio">$1231341</div>
                 <button id="button_descargar">Descargar Cotización</button>
                 <h4 class="disclamer">*Recordamos que el valor de la propiedad es un valor estimado</h4>

@@ -399,10 +399,9 @@ footer div{
     font-weight: 400;
 } 
 }
-@media(min-width:1280px){
+@media(min-width:1024px){
   body{
     display: flex;
-    flex-direction: row;
 }
   .imgmobile{
     position:fixed;
@@ -527,14 +526,15 @@ footer div{
     text-align: center;
   }
   footer{
-    display: grid;
-    grid-template-columns: auto;
-    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 0;
-    bottom: 0;
-    left: 0;
     align-items:normal;
     padding: 2rem;
   }
-  
+  footer div{
+    width: 20em;
+  }
 }

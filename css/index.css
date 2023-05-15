@@ -295,12 +295,15 @@ footer h6{
   margin-top: 0.3rem;
 }
 .img_footer {
+  margin-left: 3rem;
   width: 2em;
   height: 2em;
 }
 footer div{
   margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-left: 4.7rem;
+  width: 90%;
 }
 @media(min-width:375px) {
   .select_buscador{

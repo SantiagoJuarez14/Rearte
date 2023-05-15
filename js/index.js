@@ -16,7 +16,7 @@ function animateBars(){
     background.classList.toggle("backmenuactive");
     whatsapp.classList.toggle("whatsappactive");
 }
-const nav = document.querySelector('.navbar');
+const nav = document.querySelector('.navbaractive');
 
 nav.addEventListener('click', (e) => {
   if (e.target.matches('.menu')) {

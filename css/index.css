@@ -101,6 +101,8 @@ nav ul li a {
   width: 10em;
   margin-top: 2rem;
   border: 2px solid red;
+  border-radius: 0.3rem;  
+  margin-left: 6rem;
 }
 .whatsapp {
     position: fixed;
@@ -149,6 +151,23 @@ h3{
     padding: 0.1rem;
     border: 1px solid rgba(255, 0, 0, 0.41);
     width: 7em;
+}
+button {
+  background-color: white;
+  color: rgb(255, 0, 0);
+  padding: 10px 20px;
+  border-color: rgba(255, 0, 0, 0.374);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 2px 1px #ccc;
+  width: 20.5em;
+}
+button:hover {
+  background-color: red;
+  color: white;
 }
 .button_buscador{
     width: 12.4em;

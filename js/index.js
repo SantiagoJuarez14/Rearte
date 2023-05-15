@@ -16,6 +16,20 @@ function animateBars(){
     background.classList.toggle("backmenuactive");
     whatsapp.classList.toggle("whatsappactive");
 }
+const nav = document.querySelector('.navbar');
+
+nav.addEventListener('click', (e) => {
+  if (e.target.matches('.menu')) {
+    e.preventDefault();
+    animateBars();
+    window.location.href = e.target.href;
+  }
+});
+
+
+
+
+
 
 let zonas = [{"desc":"Buenos Aires","id":2,"childs":
             [{"desc":"Escobar","id":172,"zones":

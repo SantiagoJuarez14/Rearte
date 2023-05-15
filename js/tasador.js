@@ -1,25 +1,3 @@
-/* let url = "https://cors-anywhere.herokuapp.com/www.mapapropapp.com/api/action/portal-v2/properties";
-
-fetch(url)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error)); */
-
-/*   POST /api/action/oauth2-v1/authorize HTTP/1.1
-  Host: www.mapapropapp.com
-  Content-Type: application/x-www-form-urlencoded
-  Content-Length: 0
-   
-  client_id=jfioejweu8wu9fjsHUGldfja9ofwjf&client_secret=UHY&T&FOIHuihd8w2hg3kh8Y&grant_type=client_credentials
-
- */
-
-
-
-
-
-
-//////////////////////////////////
 document.querySelector(".burger").addEventListener("click", animateBars);
 
 let burger1 = document.querySelector(".spanburger1");

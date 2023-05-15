@@ -322,6 +322,12 @@ footer div{
   .input_contacto{
     width: 18em;
   }
+  footer{
+    margin-left: 5.2rem;
+  }
+  .img_footer{
+    margin-left: 2.4rem;
+  }
 }
 @media(min-width:480px) {
   .select_buscador{

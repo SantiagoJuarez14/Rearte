@@ -105,6 +105,7 @@ nav ul li a {
   margin-left: 6rem;
 }
 .whatsapp {
+    display: none;
     position: fixed;
     z-index: 10;
     width: 3em;
@@ -288,6 +289,7 @@ footer{
   font-size: 0.9em;
   font-weight: 400;
   margin-top: 2rem;
+  margin-left: 4.1rem;
 }
 footer h6{
   width: 70%;
@@ -295,14 +297,13 @@ footer h6{
   margin-top: 0.3rem;
 }
 .img_footer {
-  margin-left: 3rem;
+  margin-left: 2rem;
   width: 2em;
   height: 2em;
 }
 footer div{
   margin-top: 2rem;
   margin-bottom: 1rem;
-  margin-left: 4.7rem;
   width: 90%;
 }
 @media(min-width:375px) {

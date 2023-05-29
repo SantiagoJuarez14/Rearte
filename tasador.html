@@ -21,10 +21,10 @@
         <div class="backmenu"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="#header"  class="active">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#quienes_somos">Quienes Somos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
             <a href="./tasador.html"><Button id="presupuesto_boton_navbar">Presupesto</Button></a>
         </nav>
@@ -32,6 +32,23 @@
     <main>
         <h1>Tasador Valor de Propiedades</h1>
         <form id="form_tasador">
+            <div id="info_personal">
+                <div>
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="celular">Celular</label>
+                    <input type="number" id="celular">
+                </div>  
+                <div>
+                    <button>Siguiente</button>
+                </div>
+            </div>
             <label for="construidos">M² Construidos</label>
             <input type="number" id="construidos" name="construidos" required>
             <label for="sinconstruir">M² Sin Construir</label>

@@ -226,7 +226,8 @@ h4{
   grid-template-columns:auto;
 }
 /* servicios */
-section p{
+/* nosotros */
+#quienes_somos p{
     width: 80%;
     text-align: justify;
     font-size: 0.8rem;
@@ -241,14 +242,14 @@ section p{
 #quienes_somos h2{
   font-size: 1.3rem;
 }
-section ul li{
+#quienes_somos ul li{
     list-style: none;
     font-size: 0.8rem;
     font-weight: 450;
     margin-top: 0.3rem;
     text-align: center;
 }
-section ul{
+#quienes_somos ul{
     margin-top: 0.5rem;
 }
 .dueños{
@@ -258,6 +259,10 @@ section ul{
     border: 2px solid red;
     border-radius: 100px;
 }
+#quienes_somos div div h3{
+  text-align: center;
+}
+/* nosotros */
 #contacto{
   display: flex;
   flex-direction: column;
@@ -339,11 +344,13 @@ footer div{
   .input_contacto{
     width: 22em;
   }
+  /* footer */
   footer{
     font-size: 1.2em;
     font-weight: 380;
   }
   footer{
+    width: 40rem;
     font-size: 1.2em;
     font-weight: 500;
     margin-top: 2rem;
@@ -365,6 +372,7 @@ footer div{
   footer div{
     width: 40%;
   }
+  /* footer */
   /* servicios */
   .nuestros_servicios{
     width: 500px;
@@ -386,7 +394,8 @@ footer div{
   h3{
     font-size: 1.3em;
   }
-  section p{
+  /* nosotros */
+  #quienes_somos p{
     width: 80%;
     text-align: justify;
     font-size: 1.3rem;
@@ -396,22 +405,20 @@ footer div{
   #quienes_somos h2{
     font-size: 2rem;
   }
-  section ul li{
+  #quienes_somos ul li{
     font-size: 1.5rem;
     font-weight: 400;
   }
   .dueños{
     width: 220px;
     border: 2px solid red;
-    border-radius: 100px;
+    border-radius: 150px;
   }
   #quienes_somos h3{
     font-size: 1.7em;
     font-weight: 400;
   } 
-  footer{
-    width: 40rem;
-  }
+  /* nosotros */
 }
 @media(min-width:1024px){
   body{
@@ -573,8 +580,9 @@ footer div{
   .desktop_img{
     margin-top: 0;
   }
+  /* nosotros */
   #quienes_somos{
-    margin-top: 3rem;
+    margin-top: 7rem;
   }
   #quienes_somos ul{
     display: flex;
@@ -595,6 +603,12 @@ footer div{
     flex-direction: column;
     margin: 5rem;
   }
+  .img_nosotros{
+    width: 50%;
+    margin-top: 2rem;
+  }
+  /* nosotros */
+  /* contacto */
   .form_contacto{
     margin-bottom: 2rem;
     border: 2px solid red;
@@ -602,6 +616,26 @@ footer div{
   #contacto h3{
     text-align: center;
   }
+  .button_buscador_contacto{
+    width: 25rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+  }
+  .button_buscador_contacto:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    width: 25rem;
+  }
+  /* contacto */
+  /* footer */
   footer{
     width: 93vw;
     display: grid;
@@ -617,4 +651,5 @@ footer div{
   footer div{
     width: 20em;
   }
+  /* footer */
 }

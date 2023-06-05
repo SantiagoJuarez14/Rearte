@@ -102,7 +102,7 @@ nav ul li a {
   margin-top: 2rem;
   border: 2px solid red;
   border-radius: 0.3rem;  
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 .whatsapp {
     display: none;
@@ -217,6 +217,13 @@ h4{
 .titulos{
     margin-top: 2rem;
 }
+.titulo_servicios{
+  margin-top: 2rem;
+}
+.servicios{
+  display: grid;
+  grid-template-columns:auto;
+}
 section p{
     width: 80%;
     text-align: justify;
@@ -306,59 +313,11 @@ footer div{
   margin-bottom: 1rem;
   width: 90%;
 }
-@media(min-width:375px) {
-  .select_buscador{
-    width: 18em;
+@media(min-width:768px){
+  #presupuesto_boton_navbar{
+    margin-left: 16rem;
   }
-  .select_precio{
-    width: 8.5em;
-  }
-  .button_buscador{
-    width: 14.8em;
-  }
-  .button_buscador:hover {
-    width: 14.8em;
-  }
-  .input_contacto{
-    width: 18em;
-  }
-  footer{
-    margin-left: 5.2rem;
-  }
-  .img_footer{
-    margin-left: 2.4rem;
-  }
-}
-@media(min-width:480px) {
-  .select_buscador{
-    width: 22em;
-  }
-  .select_precio{
-    width: 10.5em;
-  }
-  .button_buscador{
-    width: 18.3em;
-  }
-  .button_buscador:hover {
-    width: 18.3em;
-  }
-  .input_contacto{
-    width: 22em;
-  }
-  footer{
-    font-size: 1.2em;
-    font-weight: 380;
-  }
-  footer h6{
-    width: 80%;
-  }
-  .nuestros_servicios{
-    width: 320px;
-    height: 250px;
-    margin-top: 2rem;
-  }
-}
-@media(min-width:728px){
+
   .select_buscador{
     width: 30em;
     height: 2.3em;
@@ -382,8 +341,27 @@ footer div{
     font-size: 1.2em;
     font-weight: 380;
   }
+  footer{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
   footer h6{
-    width: 80%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-right: 0 !important;
+  }
+  .images-footer{
+    margin-left: 4rem;
+  }
+  .img_footer {
+    margin-left: 2rem;
+    width: 2em;
+    height: 2em;
+  }
+  footer div{
+    width: 40%;
   }
   .nuestros_servicios{
     width: 500px;
@@ -402,7 +380,7 @@ footer div{
   h4{
     font-size: 1.5rem;
     font-weight: 300;
-    width: 18em;
+    width: 20em;
   }
   section p{
     width: 80%;
@@ -426,7 +404,10 @@ footer div{
   #quienes_somos h3{
     font-size: 1.7em;
     font-weight: 400;
-} 
+  } 
+  footer{
+    width: 40rem;
+  }
 }
 @media(min-width:1024px){
   body{
@@ -498,6 +479,19 @@ footer div{
     width: 100%;
     background-color: white;
   }
+  .slider-scale{
+    height: 600px !important;
+  }
+  .color-botones:hover{
+    background-color: #ff000040 !important;
+    border: none;
+  }
+  .color-botones{
+    box-shadow: none;
+  }
+  .span-slider{
+    box-shadow: none;
+  }
   #preferencia div{
     margin-top: 2rem;
     margin-left: 0;
@@ -512,15 +506,29 @@ footer div{
   .rango_precio{
     display: grid;
     grid-template-columns: auto auto;
-
   }
   .select_precio{
-    width: 14.5em;
+    width: 10em;
     height: 2.3em;
   }
-  #servicios{
-    display: grid;
-    grid-template-columns: auto auto;
+  .button_buscador{
+    width: 15rem;
+    margin-left: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button_buscador:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    width: 15rem;
+  }
+  .titulo_servicios{
+    
   }
   .desktop_img{
     margin-top: 0;

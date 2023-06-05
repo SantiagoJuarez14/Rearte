@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasador</title>
     <link rel="stylesheet" href="./css/tasador.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBNiQ6jkv_ORBeU-gwtAAj9KPLJTfkfr9A&callback=initMap" async defer></script>
 </head>
 <body>
     <header id="header">
@@ -32,35 +32,43 @@
     <main>
         <h1>Tasador Valor de Propiedades</h1>
         <form id="form_tasador">
-            <div id="info_personal">
-                <div>
-                    <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" required>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div>
-                    <label for="celular">Celular</label>
-                    <input type="number" id="celular">
-                </div>  
-                <div>
-                    <button>Siguiente</button>
-                </div>
+            <div>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" name="nombreapellido" required>
             </div>
-            <label for="construidos">M² Construidos</label>
-            <input type="number" id="construidos" name="construidos" required>
-            <label for="sinconstruir">M² Sin Construir</label>
-            <input type="number" id="sinconstruir" name="sinconstruir" required>
-            <label for="habitaciones">Número de habitaciones</label>
-            <input type="number" id="habitaciones" name="habitaciones" required>
-            <label for="baños">Número de baños</label>
-            <input type="number" id="baños" name="baños" required>
-            <div></div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="celular">Celular</label>
+                <input type="number" id="celular" name="celular">
+            </div> 
+            <div>
+                <label for="ubicacion">Ubicación</label>
+                <input id="searchTextField" type="text" size="50">
+                <input id="address" name="address" value='' type="hidden" placeholder="">
+            </div> 
+            <div>
+                <label for="construidos">M² Construidos</label>
+                <input type="number" id="construidos" name="construidos" required>
+            </div>
+            <div>
+                <label for="sinconstruir">M² Sin Construir</label>
+                <input type="number" id="sinconstruir" name="sinconstruir" required>
+            </div>
+            <div>
+                <label for="habitaciones">Número de habitaciones</label>
+                <input type="number" id="habitaciones" name="habitaciones" required>
+            </div>
+            <div>
+                <label for="baños">Número de baños</label>
+                <input type="number" id="baños" name="baños" required>
+            </div>
+                <div></div>
             <div>
                 <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
-                    <option value="" class="ciudad">Selecciona una ciudad</option>
+                    <option value="-1" class="ciudad" disabled selected>Selecciona una ciudad</option>
                     <option value="escobar" class="ciudad">Escobar</option>
                     <option value="bellavista" class="ciudad">Bella Vista</option>
                     <option value="grandbourg" class="ciudad">Grand Bourg</option>
@@ -89,7 +97,6 @@
                 </div>
                 <h1 id="precio_propiedad">El valor propiedad</h1>
                 <div id="precio">$1231341</div>
-                <button id="button_descargar">Descargar Cotización</button>
                 <h4 class="disclamer">*Recordamos que el valor de la propiedad es un valor estimado</h4>
             </div>
         </div>

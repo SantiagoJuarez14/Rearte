@@ -562,12 +562,12 @@ footer div{
   }
   .servicios_titulo{
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2.2rem;
     font-size: 1.3rem;
   }
   .servicios_texto{
     font-size: 1.1rem !important;
-    margin-top: 2.5rem !important;
+    margin-top: 1.5rem !important;
   }
   /* servicios */
   .desktop_img{
@@ -603,13 +603,16 @@ footer div{
     text-align: center;
   }
   footer{
-    display: flex;
-    flex-direction: row;
+    width: 93vw;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-    align-items:normal;
+    margin-top: 5rem;
     padding: 2rem;
+  }
+  footer h6{
+    margin-left: 5rem;
+    text-align: left;
   }
   footer div{
     width: 20em;

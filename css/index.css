@@ -193,6 +193,7 @@ button:hover {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+/* servicios */
 #servicios{
     display: flex;
     flex-direction: column;
@@ -224,6 +225,7 @@ h4{
   display: grid;
   grid-template-columns:auto;
 }
+/* servicios */
 section p{
     width: 80%;
     text-align: justify;
@@ -363,11 +365,18 @@ footer div{
   footer div{
     width: 40%;
   }
+  /* servicios */
   .nuestros_servicios{
     width: 500px;
     height: 300px;
     margin-top: 2rem;
   }
+  h4{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 20em;
+  }
+  /* servicios */
   h1{
     font-size: 2.5em;
   }
@@ -376,11 +385,6 @@ footer div{
   }
   h3{
     font-size: 1.3em;
-  }
-  h4{
-    font-size: 1.5rem;
-    font-weight: 300;
-    width: 20em;
   }
   section p{
     width: 80%;
@@ -527,9 +531,45 @@ footer div{
     color: red;
     width: 15rem;
   }
+  /* servicios */
   .titulo_servicios{
-    
+    margin-top: 8rem;
   }
+  #servicios{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7rem;
+    justify-content: center;
+  }
+  .servicios{
+    align-items: center;
+    width: 20rem;
+    border-radius: 10px;
+    border: 1px solid red;
+  }
+  .nuestros_servicios{
+    width: 100%;
+    height: 15rem;
+    margin-top: 0;
+    border-radius: 8px 8px 0 0 ;
+  }
+  #servicios .servicios div h4{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .servicios_titulo{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .servicios_texto{
+    font-size: 1.1rem !important;
+    margin-top: 2.5rem !important;
+  }
+  /* servicios */
   .desktop_img{
     margin-top: 0;
   }

@@ -48,7 +48,32 @@
                 <label for="ubicacion">Ubicación</label>
                 <input id="searchTextField" type="text" size="50">
                 <input id="address" name="address" value='' type="hidden" placeholder="">
+            </div>
+            <div>
+                <label for="">Seleccione tipo de propiedad</label>
+                <select name="" id="">
+                    <option value="">Casa</option>
+                    <option value="">Depto</option>
+                    <option value="">Ph</option>
+                    <option value="">Terreno</option>
+                </select>
             </div> 
+            <div>
+                <label for="">Seleccione una ciudad</label>
+                <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
+                    <option value="-1" class="ciudad" disabled selected>Selecciona una ciudad</option>
+                    <option value="escobar" class="ciudad">Escobar</option>
+                    <option value="bellavista" class="ciudad">Bella Vista</option>
+                    <option value="grandbourg" class="ciudad">Grand Bourg</option>
+                    <option value="pablonogues" class="ciudad">Ingeriero Pablo Nogués</option>
+                    <option value="josecpaz" class="ciudad">Jose C. Paz</option>
+                    <option value="polvorines" class="ciudad">Los Polvorines</option>
+                    <option value="malvinas" class="ciudad">Malvinas Argentinas</option>
+                    <option value="muñiz" class="ciudad">Muñiz</option>
+                    <option value="pilar" class="ciudad">Pilar</option>
+                    <option value="sanmiguel" class="ciudad">San Miguel</option>
+                </select>
+            </div>
             <div>
                 <label for="construidos">M² Construidos</label>
                 <input type="number" id="construidos" name="construidos" required>
@@ -65,30 +90,16 @@
                 <label for="baños">Número de baños</label>
                 <input type="number" id="baños" name="baños" required>
             </div>
-                <div></div>
-            <div>
-                <select id="ubicacion" name="ubicacion" title="ubicacion" required> 
-                    <option value="-1" class="ciudad" disabled selected>Selecciona una ciudad</option>
-                    <option value="escobar" class="ciudad">Escobar</option>
-                    <option value="bellavista" class="ciudad">Bella Vista</option>
-                    <option value="grandbourg" class="ciudad">Grand Bourg</option>
-                    <option value="pablonogues" class="ciudad">Ingeriero Pablo Nogués</option>
-                    <option value="josecpaz" class="ciudad">Jose C. Paz</option>
-                    <option value="polvorines" class="ciudad">Los Polvorines</option>
-                    <option value="malvinas" class="ciudad">Malvinas Argentinas</option>
-                    <option value="muñiz" class="ciudad">Muñiz</option>
-                    <option value="pilar" class="ciudad">Pilar</option>
-                    <option value="sanmiguel" class="ciudad">San Miguel</option>
-                </select>
-                <div id="checkboxes">
-                    <label for="pileta" class="pyt">Pileta</label>
+
+            <div id="checkboxes">
+                    <label for="pileta" class="pyt pyt3">Pileta</label>
                     <input type="checkbox" id="pileta" name="pileta" class="pyt2">
                     <label for="terraza" class="pyt">Terraza</label>
                     <input type="checkbox" id="terraza" name="terraza" class="pyt2">
-                </div>
             </div>
-            <div></div>
-            <button type="submit" onclick="calcularPrecio()" id="botoncalcularprecio">Calcular precio</button>
+            <div>
+                <button type="submit" onclick="calcularPrecio()" id="botoncalcularprecio">Calcular precio</button>
+            </div>
         </form>
         <div class="popup">
             <div class="popup_border">

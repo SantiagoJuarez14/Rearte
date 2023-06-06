@@ -346,7 +346,6 @@ h6{
     .burger{
         display: none;
     }
-
     .imgmobile{
       position:fixed;
       z-index: 999;
@@ -413,11 +412,12 @@ h6{
     }
     #form_tasador{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         margin-top: 3rem;
+        
     }
     input[type="number"] {
-        width: 70%;
+        width: 300px;
         padding: 5px;
         border: 1px solid red;
         border-radius: 5px;
@@ -426,20 +426,50 @@ h6{
         font-weight: 600;
         font-size: 1.2rem;
     }
+    input {
+      width: 300px;
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    select {
+      width: 300px;
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
     #botoncalcularprecio{
-        width: 70%;
-        
+        width: 300px;
+        margin-top: 0rem;
     }
     #ubicacion{
-        width: 70%;
+        width: 300px;
     }
     #checkboxes{
+      margin-top: 0.5rem;
         margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-    .pyt{
-        margin-left: 4.3rem;
+    .pyt2{
+        margin-top: 1.3rem;
     }
-}
-@media (min-width: 1600px){
-    
+    .pyt3{
+      margin-left: 0;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 }

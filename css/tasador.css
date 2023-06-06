@@ -143,8 +143,8 @@ input{
   font-size: 1.2rem;
 }
 button {
-  background-color: white;
-  color: rgb(255, 0, 0);
+  background-color: red;
+  color: white;
   padding: 10px 20px;
   border-color: rgba(255, 0, 0, 0.374);
   border-radius: 5px;
@@ -156,8 +156,8 @@ button {
   width: 20.5em;
 }
 button:hover {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: red;
 }
 select {
   width: 100%;
@@ -350,7 +350,7 @@ h6{
       position:fixed;
       z-index: 999;
       margin-left: 3rem;
-      margin-top: 0rem;
+      margin-top: -1.2rem;
       width: 8rem;
     }
     header{

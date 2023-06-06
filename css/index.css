@@ -134,12 +134,13 @@ h3{
     font-weight: 400;
 }
 .select_buscador{
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.7rem;
     width: 15em;
     height: 2em;
     border-radius: 6px;
     border: 1px solid rgba(255, 0, 0, 0.41);
+    text-align: center;
 }
 .rango_precio{
     flex-direction: row;
@@ -515,8 +516,9 @@ footer div{
     flex-direction: column;
   }
   .rango_precio{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 4rem !important;
   }
   .select_precio{
     width: 10em;
@@ -524,7 +526,8 @@ footer div{
   }
   .button_buscador{
     width: 15rem;
-    margin-left: 7.5rem;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;

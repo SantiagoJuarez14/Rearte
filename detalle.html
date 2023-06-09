@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rearte Propiedades</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div>
-            <a href="./index.html"><img src="./img/logo-rearte-desktop.png" alt="logodesktop" class="logo_desktop"></a>
             <a href="./index.html"><img src="./img/logo-rearte.png" class="imgmobile" alt="logomobile"></a>
         </div>
         <div class="burger">
@@ -21,15 +20,78 @@
         <div class="backmenu"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="#header"  class="active">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#quienes_somos">Quienes Somos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="./index.html" class="active menu">Inicio</a></li>
+                <li><a href="./servicios.html" class="menu">Servicios</a></li>
+                <li><a href="./nosotros.html" class="menu">Nosotros</a></li>
+                <li><a href="./contacto.html" class="menu">Contacto</a></li>
             </ul>
-            <a href="./tasador.html"><Button id="presupuesto_boton_navbar">Presupesto</Button></a>
+            <a href="./tasador.html"><Button id="presupuesto_boton_navbar">Presupuesto</Button></a>
         </nav>
     </header>
-    
+    <main>
+        <article id="detalle_propiedades">
+            <section>
+                <div>
+                    <h4 id="tipo_detalle_propiedades">Venta</h4>
+                    <h1 id="titulo_detalle_propiedades">Casa 2 pisos, con pileta</h1>
+                    <h3 id="ubicacion_detalle_propiedades">Muñoz 1200,Muñiz, San Miguel</h3>
+                </div>
+                <div>
+                    <h2 id="precio_propiedad">USD 125.000</h2>
+                    <h3 id="tipo_edificacion">Casa</h3>
+                </div>
+            </section>
+            <section>
+                <img src="https://images.mapapropapp.com/mapaprop-image/photos/3028/243829/2666175.jpg" alt="">
+            </section>
+        </article>
+        <h2>Descripción</h2>
+        <article id="descripcion">
+            <section>
+                <img src="./img/bed.svg" alt="icono">
+                <h4 id="dormitorios_detalle_propiedades">Dormitorios</h4>
+                <h5 id="cantidad_dormitorios">5</h5>
+            </section>
+            <section>
+                <img src="./img/home.svg" alt="icono">
+                <h4 id="ambientes_detalle_propiedades">Ambientes</h4>
+                <h5 id="cantidad_ambientes">3</h5>
+            </section>
+            <section>
+                <img src="./img/bath.svg" alt="icono">
+                <h4 id="baños_detalle_propiedades">Baños</h4>
+                <h5 id="cantidad_baños">1</h5>
+            </section>
+            <section>
+                <img src="./img/object-ungroup.svg" alt="icono">
+                <h4 id="m2_totales_detalle_propiedades">M2 Totales</h4>
+                <h5 id="cantidad_m2_totales">120</h5>
+            </section>
+            <section>
+                <img src="./img/pathfinder.svg" alt="icono">
+                <h4 id="m2_cubiertos_detalle_propiedades">M2 Cubiertos</h4>
+                <h5 id="cantidad_m2_cubiertos">100</h5>
+            </section>
+        </article>
+        <article>
+            <section>
+                <p id="descripcion_detalle_propiedades">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad veritatis repellendus, magnam aperiam rem mollitia, in dolore eligendi cupiditate error possimus eaque quasi nam cum ab perferendis tempore obcaecati?</p>
+            </section>
+        </article>
+        <aside id="map"></aside>
+    </main>
+    <footer>
+        <div>
+            <h6>Rearte Propiedades © 2023 | Todos los derechos Reservados.</h6>
+            <h6>Muñoz 1338 San Miguel, Buenos Aires, Argentina CP. 1663</h6>
+            <h6>Teléfono: 4667-2956</h6>
+            <h6>Celular: 11-3900-0846</h6>
+        </div>
+        <div class="images-footer">
+            <a href=""><img src="./img/facebook-f.svg" alt="facebook" class="img_footer"></a>
+            <a href=""><img src="./img/instagram.svg" alt="instagram" class="img_footer"></a>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

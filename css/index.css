@@ -377,6 +377,9 @@ section article a{
   color: black;
 }
 /* cards */
+/* detalle propiedades */
+
+/* detalle propiedades */
 @media(min-width:768px){
   #presupuesto_boton_navbar{
     margin-left: 16rem;
@@ -723,4 +726,61 @@ section article a{
     height: 52vh;
   }
   /* cards */
+  /* detalle propiedades */
+#detalle_propiedades{
+  width: 90%;
+  margin: 3rem;
+}
+#detalle_propiedades section img{
+  width: 500px;
+}
+#detalle_propiedades section{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#detalle_propiedades section div{
+  display: grid;
+}
+#detalle_propiedades section div h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#detalle_propiedades section div h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#detalle_propiedades h1{
+  margin-top: 0.5rem;
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+#descripcion{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+#descripcion section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+#descripcion img{
+  width: 40px;
+}
+#descripcion h4{
+  font-size: 1.2rem;
+  text-align: center;
+}
+#descripcion_detalle_propiedades{
+  width: 500px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+/* detalle propiedades */
 }

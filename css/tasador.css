@@ -60,12 +60,13 @@ nav ul li a {
   border-bottom: 0.2rem solid rgba(255, 0, 0, 0.734);
 }
 .burger {
-  position: sticky;
+  position: fixed;
   width: 2.3em;
   height: 2.3em;
   cursor: pointer;
   z-index: 10;
   margin-top: 0.2rem;
+  right: 1rem;
 }
 .spanburger {
   display: block;

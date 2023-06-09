@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -79,6 +80,10 @@ nav ul li a {
   margin-top: 0.36em;
   transition: all 200ms;
   transform-origin: 0px 100%;
+}
+.burgeractive{
+  position: fixed;
+  right: 1rem;
 }
 .activespanburger1 {
   transform: rotate(45deg) translate(-2px, 1px);
@@ -180,6 +185,7 @@ button:hover {
     border: 0;
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .button_buscador:hover {
     display: flex;
@@ -321,6 +327,56 @@ footer div{
   margin-bottom: 1rem;
   width: 90%;
 }
+/* cards */
+#section_cards{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+section article{
+  width: 282px;
+  height: 50vh;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+section article img{
+  width: 280px;
+  border-radius: 10px;
+}
+section article h3{
+  font-size: 1em;
+  color: #686868;
+  margin-left: 1rem;
+}
+section article h2{
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: -0.2rem;
+}
+section article div h4{
+  font-size: 1em;
+  color: #686868;
+  margin-left: 0.2rem;
+}
+section article div img{
+  width: 20px;
+  margin-left: 0.8rem;
+}
+section article div{
+  display: flex;
+  flex-direction: row;
+  margin-top: -0.2rem;
+}
+section article h1{
+  font-size: 2em;
+  margin-top: 0.5rem;
+}
+section article a{
+  text-decoration: none;
+  color: black;
+}
+/* cards */
 @media(min-width:768px){
   #presupuesto_boton_navbar{
     margin-left: 16rem;
@@ -420,6 +476,12 @@ footer div{
     font-weight: 400;
   } 
   /* nosotros */
+  /* cards */
+  #section_cards{
+    grid-template-columns: auto auto;
+    gap: 1rem 4rem ;
+  }
+  /* cards */
 }
 @media(min-width:1024px){
   body{
@@ -652,4 +714,13 @@ footer div{
     width: 20em;
   }
   /* footer */
+  /* cards */
+  #section_cards{
+    grid-template-columns: auto auto auto;
+    gap: 1rem 3rem ;
+  }
+  section article{
+    height: 52vh;
+  }
+  /* cards */
 }
